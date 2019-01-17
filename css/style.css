@@ -1,0 +1,423 @@
+html, body {
+    padding: 0em;
+    margin: 0em;
+    color: rgb(85, 86, 90);
+    
+    font-family: Pembroke, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: rgb(85, 86, 90);
+    
+    background-color: aliceblue;
+    
+    
+}
+
+main {
+    max-width: 960px;
+    position: relative;
+    margin: auto;    
+    background-color: white;
+    padding-bottom: 1em;
+}
+
+h1 {
+    font-family: Arial;
+    margin: 0em;
+    padding-top: 1em;
+}
+
+h2{
+    font-size: 1.1em;
+    }
+
+section:first-of-type p{  
+    max-width: 14em;
+    font-size: 0.8em;
+
+}
+/*header, deze codespreekt alles in de header aan o.a. de nav*/
+header {
+    
+    
+background: linear-gradient(to left, rgb(0, 0, 0,0.0), rgb(0, 0, 6, 0.1)), url(bigben.jpg), no-repeat center; 
+background-size: cover; 
+    
+    margin-top: 0em;
+    margin-bottom: 2em; 
+    border-bottom: 0.3em solid rgb(36, 181, 201);
+    padding-bottom: 7em;
+    
+    
+}
+
+header h1{
+    padding-left:2em;    
+    color: white;
+
+}
+
+header p {
+    padding-left:4em;
+    color: white;
+}
+
+
+nav {
+    background: rgb(6, 24, 61);
+    color: white; 
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    height: 3em;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+    max-width: 960px;
+    position: relative;
+    margin: auto;
+    padding-left: 2em;
+    padding-right: 2em;
+    vertical-align: middle;
+
+}
+
+nav ul li:hover{
+    background-color: rgb(36, 181, 201);
+}
+
+
+nav a {
+    margin-left: 2em;
+}
+
+nav img{
+    width:40%;
+    min-width: 6em;
+    margin-right: 2em;
+}
+
+/*aanbevolen verhaal*/
+
+section:first-of-type{
+    background-image:url(laptop-01.png);
+    height: 10em;
+    background-size: cover;
+    padding: 2em;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+
+}
+
+/*sorteren en filteren*/
+
+button{
+    display:block;
+    width: 100%;
+}
+
+
+
+fieldset {
+        border: none;
+}
+
+form fieldset {
+        border-bottom: 0.05em solid rgb(36, 181, 201);
+}
+
+form{
+height: 100%;
+    /* volledige lengte */
+    width: 0;
+    /* eerst is het niks, met de class van js wordt het aangepast */
+    position: fixed;
+    /* zorgt ervoor dat het aan de zijkant staat en niet onder de eerste section */
+    z-index: 1;
+    /*zorgt ervoor de de artikelen er niet boven komen als je daar overheen hovert*/
+    top: 0;
+    /* Zorgt ervoor dat het niet tussen de artikelen komt te staan */
+    left: 0;
+    /*Zorgt ervoor dat het helemaal links staat*/
+    background-color: white;
+    /* Black*/
+    overflow-x: hidden;
+    /* zorgt ervoor dat het niet meescrollt */
+    transition: 0.5s;
+    /* zorgt ervoor dat het er een halve seconde over doet */
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
+    padding-top: 2em;
+
+}
+
+form h3 {
+    text-align: center;
+}
+
+}
+
+form fieldset p {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+
+form.show-filteren {
+    width: 23em;
+}
+
+form a {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+/*verhalen */
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+article {
+    max-width: 13em;
+    padding:2em;
+    background-color: rgb(168, 226, 234);
+    box-shadow: rgb(161, 162, 167) 0px 3px 3px -2px inset;
+    border-radius: 1em;
+    color: white;
+    text-align: center;
+}
+
+article img{
+    max-width:17em;
+    height: auto;
+    margin-left: -2em;
+    margin-top: -2em;
+    border-radius: 1em 1em 0em 0em;
+    padding-bottom: -8em;
+    filter: grayscale(100%);
+	transition: .4s ease-in-out;
+    
+}
+
+
+article img:hover {
+	filter: grayscale(0);
+}
+
+article a button{
+    padding-left: 3em;
+    padding-right: 3em; 
+    width: 100%;
+
+}
+
+article h3{
+    text-align: center;
+    border-bottom: 0.1em solid white;
+    border-top: 0.1em solid white;
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
+}
+
+article p{
+    overflow: hidden;
+    max-height: 4.5em;
+    display: block;
+}
+
+
+/*buttons formulier*/
+
+form button{
+    background-color: rgb(255, 234, 106);
+    padding: 1em;
+    border: none;
+    text-align: center;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    
+}
+
+form button:hover{
+    background-color: lightyellow;
+}
+
+
+/*buttons artikel*/
+
+article a button{
+    background-color: rgb(255, 234, 106);
+    padding: 1em;
+    border: none;
+    text-align: center;
+    margin: 0.5em;
+    border-radius: 0.5em;
+    
+}
+
+article a button:hover{
+    background-color: lightyellow;
+}
+
+fieldset button{
+     background-color: rgb(255, 234, 106);
+    padding: 1em;
+    border: none;
+    text-align: center;
+    margin: 0.5em;
+    border-radius: 0.5em;
+}
+
+fieldset button:hover{
+    background-color: lightyellow;
+}
+/*footer*/
+
+footer h6 {
+    background-color:rgb(6, 24, 61);
+    padding: 2em;
+    border: 2em;
+    margin-top: 2em;
+   /* margin-left: 2em;
+    margin-right: 2em;*/
+    text-align: center;
+    color: #fff;
+    font-size: 60%;
+}
+
+
+/*grid*/
+
+section:nth-of-type(2){
+    display:grid;
+    margin: 2em;
+    grid-gap: 1em; 
+
+
+}
+
+@media(min-width:33em){
+    section:nth-of-type(2){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        flex-wrap: wrap;
+    }
+    
+    h2{
+        font-size: 1.5em;
+    }
+    
+    section:first-of-type p{  
+    max-width: 30em; 
+    font-size: 0.8em;
+}
+}
+@media(min-width:55em){
+    section:nth-of-type(2){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    h2{
+        font-size: 2em;
+    }
+    
+    section:first-of-type p{  
+    max-width: 30em;
+    font-size: 1em;
+
+}
+    
+}
+
+/*download button*/
+article footer button {
+  color: gray;
+  background-color: white;
+  border: 0.1em solid;
+  border-radius: 0.5em;
+  cursor: pointer;
+  outline: 0;
+}
+  
+ article footer button:hover {
+    color: rgb(6, 24, 61);
+  }
+  
+article footer button:active {
+    transform: scale(0.95);
+    background-color: rgb(6, 24, 61);
+  }
+  
+.selected {
+    color: white;
+    background-color: rgb(6, 24, 61);
+    border-color:rgb(6, 24, 61);
+  }
+
+article footer button{
+  display: inline-block;
+  fill: currentColor;
+  margin-left: 0.6em;
+}
+
+/*download button
+article footer  {
+  color: gray;
+  background-color: white;
+  border: 0.1em solid;
+  border-radius: 0.5em;
+  cursor: pointer;
+  outline: 0;
+}
+  
+ article footer:hover {
+    color: red;
+  }
+  
+ article footer:active {
+    transform: scale(0.95);
+  }
+  
+article footer:selected {
+    color: white;
+    background-color: red;
+    border-color:red;
+  }
+
+ article footer{
+    display: inline-block;
+    fill: currentColor;
+  }
+*/
+
+
+/*overige
+
+form{
+    margin-top: -10em;
+    display: none;
+    transition: margin 0.4s ease-out;
+    
+}
+
+.show{
+    margin-top: 0em;
+    display: 0em;
+    display: inline;
+}
+
+/*
+a[href="datum.html"]{
+    color:red;
+}
+*/
